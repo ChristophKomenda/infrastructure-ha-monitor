@@ -1,4 +1,4 @@
-# Infrastructure HA Monitor
+# Infrastructure HA Monitor — Docker, Cloudflare and Server Monitoring for Home Assistant
 
 Distributed infrastructure monitoring and cross-host
 incident correlation for Home Assistant.
@@ -173,3 +173,23 @@ measurements provide supplemental diagnostic evidence.
 ## License
 
 MIT
+
+<!-- github-seo:begin -->
+
+## Related projects
+
+- [Pironman 5 Home Assistant Integration](https://github.com/ChristophKomenda/pironman5-homeassistant-container)
+- [Powerline2MQTT — dLAN monitoring](https://github.com/ChristophKomenda/powerline2mqtt)
+- [Bitcoin Pi Node — Raspberry Pi deployment](https://github.com/ChristophKomenda/bitcoin-pi-node)
+
+## Frequently asked questions — quick answers
+
+### How can I monitor Cloudflare Tunnel and Docker in Home Assistant?
+
+This project collects infrastructure measurements on Linux hosts and publishes them using MQTT discovery. Consult the configuration and installation instructions for supported checks.
+
+### What is cross-host incident correlation?
+
+Monitoring agents collect independent measurements. The correlation engine compares fresh snapshots from configured hosts to help classify symptoms. It does not guarantee identification of the root cause.
+
+<!-- github-seo:end -->
