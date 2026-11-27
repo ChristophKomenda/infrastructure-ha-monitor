@@ -1,5 +1,5 @@
 name: Infrastructure HA Monitor (experimental)
-version: "0.1.0-alpha.1"
+version: "0.1.0-alpha.2"
 slug: infrastructure-ha-monitor
 description: Cross-host infrastructure correlation via MQTT
 url: https://github.com/ChristophKomenda/infrastructure-ha-monitor

@@ -51,6 +51,12 @@ The correlation engine compares fresh snapshots
 from two configured hosts and classifies symptoms
 without claiming a proven root cause.
 
+## Home Assistant OS app
+
+[![Add repository to Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FChristophKomenda%2Fhome-assistant-apps)
+
+Install **Infrastructure HA Monitor** from the [Community Apps repository](https://github.com/ChristophKomenda/home-assistant-apps). The experimental app runs the correlation engine only; two external Linux agents remain required. Do not run two correlation engines against the same broker namespace. See [app setup](haos/DOCS.md). HAOS runtime validation is pending.
+
 ## Requirements
 
 - Linux with systemd
