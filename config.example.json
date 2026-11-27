@@ -1,0 +1,24 @@
+{
+  "node_id": "primary",
+  "node_name": "Primary Server",
+  "interval": 10,
+  "gateway": "192.168.1.1",
+  "network_interface": "eth0",
+  "docker_network": "proxy",
+  "tunnels": [],
+  "websites": [],
+  "mounts": ["/"],
+  "dynamic_edges": true,
+  "dynamic_edge_limit": 8,
+  "correlation_nodes": [
+    "primary",
+    "secondary"
+  ],
+  "mqtt": {
+    "host": "mqtt.example.invalid",
+    "port": 1883,
+    "username": "infrastructure_monitor",
+    "password": "CHANGE_ME",
+    "tls": false
+  }
+}
