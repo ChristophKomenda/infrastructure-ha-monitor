@@ -1,0 +1,26 @@
+name: Infrastructure HA Monitor (experimental)
+version: "0.1.0-alpha.1"
+slug: infrastructure-ha-monitor
+description: Cross-host infrastructure correlation via MQTT
+url: https://github.com/ChristophKomenda/infrastructure-ha-monitor
+arch: [aarch64, amd64]
+startup: application
+boot: manual
+init: false
+stage: experimental
+options:
+  primary_node: primary
+  secondary_node: secondary
+  mqtt_host: core-mosquitto
+  mqtt_port: 8883
+  mqtt_username: ""
+  mqtt_password: ""
+  mqtt_tls: true
+schema:
+  primary_node: str
+  secondary_node: str
+  mqtt_host: str
+  mqtt_port: port
+  mqtt_username: str
+  mqtt_password: password
+  mqtt_tls: bool
